@@ -23,4 +23,19 @@ public class Projectile : MonoBehaviour {
             Destroy(this.gameObject);
         }
     }
+
+    private void FaceForward() {
+        // Rotate projectile to match its direction
+        if (m_rb.linearVelocity.sqrMagnitude > 0f) {
+            // Calculate direction in degrees based on velocity
+            float angle = Mathf.Atan2(m_rb.linearVelocity.y, m_rb.linearVelocity.x) * Mathf.Rad2Deg;
+
+            // Rotate to forward direction
+            transform.rotation = Quaternion.Euler(0, 0, angle - 90);
+        }
+    }
+
+    private void FixedUpdate() {
+        FaceForward();
+    }
 }
