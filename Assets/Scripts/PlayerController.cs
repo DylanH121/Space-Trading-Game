@@ -42,7 +42,6 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void OnMove(InputAction.CallbackContext context) {
-        Debug.Log("Move action performed");
         if (context.performed && !m_isBraking) {
             m_moveInput = context.ReadValue<float>();
         }
