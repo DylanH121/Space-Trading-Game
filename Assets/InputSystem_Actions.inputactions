@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "InputSystem_Actions",
     "maps": [
         {
@@ -36,6 +37,15 @@
                     "name": "Brake",
                     "type": "Button",
                     "id": "c6011fbe-bd23-4c69-b5ae-ee58dc4ba262",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "1229edd1-7a09-42fe-b1cb-2f643994286d",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -174,6 +184,17 @@
                     "action": "Turn",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "19585467-b479-4378-9a66-267fc24ee1c1",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },

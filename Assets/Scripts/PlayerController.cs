@@ -15,9 +15,13 @@ public class PlayerController : MonoBehaviour {
     
     [SerializeField] private GameObject m_projectilePrefab;
 
+    public Interactable m_interactableObject;
+
     private float m_moveInput;
     private float m_turnInput;
     private bool m_isBraking = false;
+
+    public bool m_inInteractArea = false;
 
     void Start() {
         Application.targetFrameRate = 60;
@@ -65,6 +69,12 @@ public class PlayerController : MonoBehaviour {
         }
         else if (context.canceled) {
             m_isBraking = false;
+        }
+    }
+
+    public void OnInteract(InputAction.CallbackContext context) {
+        if (context.performed && m_interactableObject != null) {
+            m_interactableObject.OnInteract();
         }
     }
 
