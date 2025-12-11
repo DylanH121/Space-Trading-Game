@@ -192,8 +192,9 @@ GameObject:
   - component: {fileID: 3425408885936715123}
   - component: {fileID: 4660735322391483419}
   - component: {fileID: 4686733468548901339}
-  - component: {fileID: 3558927813244551203}
   - component: {fileID: 2188108680220168558}
+  - component: {fileID: 3558927813244551203}
+  - component: {fileID: 1025154609365044777}
   m_Layer: 0
   m_Name: Player Ship 1
   m_TagString: Player
@@ -349,27 +350,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.46, y: 1.08}
   m_EdgeRadius: 0
---- !u!114 &3558927813244551203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7328775750866925705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a0ce2ec89f030542b78850a523f15f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_thrusterForce: 2
-  m_rotationForce: 3
-  m_maxMoveSpeed: 5
-  m_maxTurnSpeed: 200
-  m_movementBrakeForceMultiplier: 1
-  m_rotationBrakeForceMultiplier: 1
-  m_projectilePrefab: {fileID: 0}
-  m_interactableObject: {fileID: 0}
-  m_inInteractArea: 0
 --- !u!114 &2188108680220168558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,3 +476,36 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &3558927813244551203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7328775750866925705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a0ce2ec89f030542b78850a523f15f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_thrusterForce: 2
+  m_rotationForce: 3
+  m_maxMoveSpeed: 5
+  m_maxTurnSpeed: 200
+  m_movementBrakeForceMultiplier: 1
+  m_rotationBrakeForceMultiplier: 1
+  m_projectilePrefab: {fileID: 0}
+  m_interactableObject: {fileID: 0}
+  m_inInteractArea: 0
+--- !u!114 &1025154609365044777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7328775750866925705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc7fae6dbc459994cae840b0d759e0d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Inventory
